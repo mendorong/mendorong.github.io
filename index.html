@@ -58,30 +58,31 @@
 
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
-                <section>
-                    <h1>임준석 &#x2661; 서지연</h1>
-                    <h3>모바일 청첩장</h3>
-                    <p>
-                        <small>mac.zoo & cheese.cake wedding !</a></small>
-                    </p>
-                </section>
-                <section>
-                    <h1>2016.04.02(토) 오후 5시</h1>
-                    <p>
-                        <small>mac.zoo & cheese.cake wedding !</a></small>
-                    </p>
-                </section>
-                <section>
-                    <h1>mac & cheese wedding !</h1>
-                    <h3>장소 : 명동 우리은행 본점 4층</h3>
-                    <div class="map_wrap">
-                        <div style="height: 300px;">
-                            <a target="_blank" href="http://map.daum.net/?urlX=495977.0&amp;urlY=1127756.0&amp;itemId=12372877&amp;q=%EC%9A%B0%EB%A6%AC%EC%9D%80%ED%96%89%20%EB%B3%B8%EC%A0%90&amp;srcid=12372877&amp;map_type=TYPE_MAP&amp;from=roughmap">
-                                <img class="map" src="http://cfile185.uf.daum.net/image/2106C43C56A18E230E06CB" width="298px" height="298px" style="border:1px solid #ccc;">
-                            </a>
+
+                    <section>
+                        <h1>임준석 &#x2661; 서지연</h1>
+                        <h3>모바일 청첩장</h3>
+                        <p>
+                            <small>mac.zoo & cheese.cake wedding !</a></small>
+                        </p>
+                    </section>
+                    <section>
+                        <h1>2016.04.02(토) 오후 5시</h1>
+                        <p>
+                            <small>mac.zoo & cheese.cake wedding !</a></small>
+                        </p>
+                    </section>
+                    <section>
+                        <h1>mac & cheese wedding !</h1>
+                        <h3>장소 : 명동 우리은행 본점 4층</h3>
+                        <div class="map_wrap">
+                            <div style="height: 300px;">
+                                <a target="_blank" href="http://map.daum.net/?urlX=495977.0&amp;urlY=1127756.0&amp;itemId=12372877&amp;q=%EC%9A%B0%EB%A6%AC%EC%9D%80%ED%96%89%20%EB%B3%B8%EC%A0%90&amp;srcid=12372877&amp;map_type=TYPE_MAP&amp;from=roughmap">
+                                    <img class="map" src="http://cfile185.uf.daum.net/image/2106C43C56A18E230E06CB" width="298px" height="298px" style="border:1px solid #ccc;">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
             </div>
 
         </div>
@@ -96,11 +97,12 @@
             Reveal.initialize({
                 controls: true,
                 progress: true,
-                history: true,
+                history: false,
                 center: true,
-
-                transition: 'convex', // none/fade/slide/convex/concave/zoom
-
+                touch: true,
+                transition: 'zoom', // none/fade/slide/convex/concave/zoom
+                parallaxBackgroundImage : 'https://demo.gavick.com/joomla25/creative/templates/gk_creative/images/parallax/background_bottom.jpg',
+                parallaxBackgroundSize : "2559px 819px",
                 // Optional reveal.js plugins
                 dependencies: [
                     { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
