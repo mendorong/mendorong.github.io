@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>멘도롱또똣</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+
+
+    <link rel="stylesheet" href="scroll/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="scroll/css/style.css" type="text/css">
+
+    <script type="application/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="scroll/js/jquery.scrollmagic.js"></script>
+    <style>
+        .wrap{
+            margin:0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="scrollContent">
+    <section id="scene1">
+        <div class="wrap">
+            <h1>임준석 &#x2661; 서지연</h1>
+            <p>
+                <small>mac.zoo & cheese.cake wedding !</a></small>
+            </p>
+        </div>
+    </section>
+    <section id="scene2">
+        <div class="wrap">
+            <h1>2016.04.02(토) 오후 5시</h1>
+            <h3>장소 : 명동 우리은행 본점 4층(약도 &#8650;)</h3>
+            <p>
+                <small>mac.zoo & cheese.cake wedding !</a></small>
+            </p>
+        </div>
+    </section>
+    <section id="scene3">
+        <div class="wrap">
+            <h1>mac & cheese wedding !</h1>
+            <div class="map_wrap">
+                <div style="height: 300px;">
+                    <a target="_blank" href="http://map.daum.net/?urlX=495977.0&amp;urlY=1127756.0&amp;itemId=12372877&amp;q=%EC%9A%B0%EB%A6%AC%EC%9D%80%ED%96%89%20%EB%B3%B8%EC%A0%90&amp;srcid=12372877&amp;map_type=TYPE_MAP&amp;from=roughmap">
+                        <img class="map" src="http://cfile185.uf.daum.net/image/2106C43C56A18E230E06CB" width="298px" height="298px" style="border:1px solid #ccc;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="spacer s_viewport"></div>
+</div>
+<script>
+    var controller = new ScrollMagic();
+    var s1 = new ScrollScene({ duration: 500}).setPin("#scene1");
+    var s2 = new ScrollScene({ duration: 500}).setPin("#scene2");
+    var s3 = new ScrollScene({ duration: 500}).setPin("#scene3");
+    controller.addScene([
+        s1,s2,s3
+    ]);
+</script>
+</body>
+</html>
