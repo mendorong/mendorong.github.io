@@ -17,20 +17,31 @@
 
     <script type="application/javascript" src="js/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="scroll/js/jquery.scrollmagic.js"></script>
+    <script type="text/javascript" src="scroll/js/_dependent/greensock/TweenMax.min.js"></script>
     <style>
         .wrap{
             margin:0 auto;
             text-align: center;
+        }
+        .parallaxParent {
+            height: 100vh;
+            overflow: hidden;
+        }
+        .parallaxParent > * {
+            height: 200%;
+            position: relative;
+            top: -100%;
         }
     </style>
 </head>
 <body>
 <div class="scrollContent">
     <section id="scene1">
-        <div class="wrap">
+        <div class="wrap" class="parallaxParent">
+            <div style="background-image: url(http://janpaepke.github.io/ScrollMagic/img/example_parallax_bg1.png);"></div>
             <h1>임준석 &#x2661; 서지연</h1>
             <p>
-                <small>mac.zoo & cheese.cake wedding !</a></small>
+                <small>mac.zoo & cheese.cake wedding !</small>
             </p>
         </div>
     </section>
@@ -58,10 +69,20 @@
     <div class="spacer s_viewport"></div>
 </div>
 <script>
-    var controller = new ScrollMagic();
-    var s1 = new ScrollScene({ duration: 500}).setPin("#scene1");
-    var s2 = new ScrollScene({ duration: 500}).setPin("#scene2");
-    var s3 = new ScrollScene({ duration: 500}).setPin("#scene3");
+    var controller = new ScrollMagic({
+        globalSceneOptions : {
+            triggerHook: "onEnter"
+        }
+    });
+    var s1 = new ScrollScene({ duration: 200 }).setPin("#scene1").setTween("#scene1 > div", {
+        y: "80%"
+    });
+    var s2 = new ScrollScene({ duration: 200 }).setPin("#scene2").setTween("#scene1 > div", {
+        y: "80%"
+    });
+    var s3 = new ScrollScene({ duration: 200 }).setPin("#scene3").setTween("#scene1 > div", {
+        y: "80%"
+    });
     controller.addScene([
         s1,s2,s3
     ]);
