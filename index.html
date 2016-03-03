@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>멘도롱또똣</title>
-
-        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-        <meta name="author" content="Hakim El Hattab">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="I want you to come and celebrate us.">
+        <meta name="author" content="Mac&Cheese">
 
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -16,6 +16,14 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/jquery.countdown.min.js"></script>
 
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.8/vendors/jquery.easings.min.js"></script>
 
@@ -123,119 +131,111 @@
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 
   body, table, div, p {font-family:'Jeju Gothic', sans-serif;}
-
-
-
         </style>
 
     </head>
     <body>
-
-
-
    <ul id="menu">
-        <li data-menuanchor="wedding" class="active"><a href="#wedding">준석&지연, 우리 결혼해요</a></li>
+        <li data-menuanchor=-fluid"wedding" class="active"><a href="#wedding">준석&지연, 우리 결혼해요</a></li>
 
     </ul>
-      <div id="fullpage">
-          <div class="section" style="text-align:center;">
-            <img src="img/IMG_7688.JPG" style="box-shadow:0 0 0; border:0; position:absolute;left:0;top:0;width:100%;height:40%;z-index:1;"/>
+    <div id="fullpage" >
+        <div class="section" style="text-align:center;">
+          <img class="img-responsive center-block" src="img/IMG_7688.JPG"  />
+          <div class="bs-docs-header" id="content" tabindex="-1">
+             <div >
+               <img src="img/wedding-icons/PNGs/TWO COLORS/WEDDING AND LOVE ICONS_color3_selinozgur-11.png" style="box-shadow:0 0 0; border:0;z-index:2;height:100;bottom:100px;"/>
+               <div>
+                  <br>
+                  <br>
+                  <br>
+                  우리은행 본점 4층 5시에 시작합니다.
 
-            <img src="img/wedding-icons/PNGs/TWO COLORS/WEDDING AND LOVE ICONS_color3_selinozgur-11.png" style="box-shadow:0 0 0; border:0;z-index:2;height:100;bottom:100px;"/>
-
-
-
-           <div id="getting-started" style="height:40px; position:fixed; bottom:5px; width:100%;">
-             <div style="width: 25%;float: left;bottom:10">
-               <div style="background-color:white;height:50%;" id="remainday">0</div>
-               <div style="color:rgb(255, 163, 55);font-weight: bold;">DAYS</div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+               </div>
+               <div id="getting-started" style="height:40px; position:fixed; bottom:5px; width:100%;">
+                 <div style="width: 25%;float: left;bottom:10">
+                   <div style="background-color:white;height:50%;" id="remainday">0</div>
+                   <div style="color:rgb(255, 163, 55);font-weight: bold;">DAYS</div>
+                 </div>
+                 <div style="width: 25%;float: left;bottom:10">
+                   <div style="background-color:white;height:50%;" id="remainhour">0</div>
+                   <div style="color:rgb(255, 163, 55);font-weight: bold;">HOURS</div>
+                 </div>
+                 <div style="width: 25%;float: left;bottom:10">
+                   <div style="background-color:white;height:50%;" id="remainmin">0</div>
+                   <div style="color:rgb(255, 163, 55);font-weight: bold;">MINS</div>
+                 </div>
+                 <div style="width: 25%;float: left;bottom:10">
+                   <div style="background-color:white;height:50%;" id="remainsec">0</div>
+                   <div style="color:rgb(255, 163, 55);font-weight: bold;">SECS</div>
+                 </div>
+               </div>
+               </div>
              </div>
-             <div style="width: 25%;float: left;bottom:10">
-               <div style="background-color:white;height:50%;" id="remainhour">0</div>
-               <div style="color:rgb(255, 163, 55);font-weight: bold;">HOURS</div>
-             </div>
-             <div style="width: 25%;float: left;bottom:10">
-               <div style="background-color:white;height:50%;" id="remainmin">0</div>
-               <div style="color:rgb(255, 163, 55);font-weight: bold;">MINS</div>
-             </div>
-             <div style="width: 25%;float: left;bottom:10">
-               <div style="background-color:white;height:50%;" id="remainsec">0</div>
-               <div style="color:rgb(255, 163, 55);font-weight: bold;">SECS</div>
-             </div>
-           </div>
+        </div>
+        <div class="section" style="text-align:center;">
+          <div class="slide">
+              <img class="img-responsive center-block" src="img/SAM_7436.JPG"  />
+              <img class="img-responsive center-block" src="img/SAM_6199.JPG"  />
+            </div>
 
-          </div>
-
-          <div class="section">
-              <div class="slide">
-                <img src="img/wedding-icons/PNGs/TWO COLORS/WEDDING AND LOVE ICONS_color3_selinozgur-06.png" style="height:50;position:absolute;top:20px;" />
-                사진1
-              </div>
-
-              <div class="slide">
-                <img src="img/wedding-icons/PNGs/TWO COLORS/WEDDING AND LOVE ICONS_color3_selinozgur-46.png" style="box-shadow:0 0 0; border:0;z-index:2;height:50;position:absolute;top:20px;" />
-                 사진2
-
-              </div>
-
-              <div class="slide">
-                <img src="img/wedding-icons/PNGs/TWO COLORS/WEDDING AND LOVE ICONS_color3_selinozgur-05.png" style="box-shadow:0 0 0; border:0;z-index:2;height:50;position:absolute;top:20px;" />
-                 사진3
-
-              </div>
-              <div class="slide">
-                <img src="img/wedding-icons/PNGs/TWO COLORS/WEDDING AND LOVE ICONS_color3_selinozgur-26.png" style="box-shadow:0 0 0; border:0;z-index:2;height:50;position:absolute;top:20px;" />
-                 사진4
-
-              </div>
-          </div>
-
-          <div class="section" style="padding-top:0em;">
-            <img src="img/wedding-icons/PNGs/TWO COLORS/WEDDING AND LOVE ICONS_color3_selinozgur-44.png" style="box-shadow:0 0 0; border:0;z-index:2;height:50;position:absolute;top:50px;"/>
-            <div class="map_wrap">
-                <div>
-                    <a target="_blank" href="http://map.daum.net/?urlX=495977.0&amp;urlY=1127756.0&amp;itemId=12372877&amp;q=%EC%9A%B0%EB%A6%AC%EC%9D%80%ED%96%89%20%EB%B3%B8%EC%A0%90&amp;srcid=12372877&amp;map_type=TYPE_MAP&amp;from=roughmap">
-                        <img class="map" src="http://cfile185.uf.daum.net/image/2106C43C56A18E230E06CB" width="100%">
-                    </a>
-                </div>
-
-                            <div style="height:100px;width: 25%;float: left; color:rgb(255, 163, 55);font-weight: bold;">LOCATION</div>
-                            <div style="height:100px; width: 70%;float: right; text-align:left;">
-                              <div style="padding-top:10px;">우리은행 본점 4층<div>
-                             <div style="font-size:14;padding-top:10px;">
-                               버스<br>
-                               1. 앉아서 오거나<br>
-                               2. 서서 오거나 <br>
-                               지하철<br>
-                               1. 앉아서 오거나<br>
-                               2. 서서 오거나 <br>
-                             </div>
-
-                            </div>
+            <div class="slide">
+               <img class="img-responsive center-block" src="img/SAM_6049.JPG"  />
+               <img class="img-responsive center-block" src="img/SAM_6272.JPG"  />
 
             </div>
-          </div>
-          </div>
-        </div>
-          <div class="section">
-            축하해주셔서 감사합니다.<br>
-            <div id="disqus_thread" style="background-color: white;border-radius: 15px;"></div>
-            <script>
 
-                var disqus_config = function () {
-                    this.page.url = 'http://mendorong.github.io/';
-                };
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = '//joon1030.disqus.com/embed.js';
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-                $(window).resize();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-          </div>
+            <div class="slide">
+               <img class="img-responsive center-block" src="img/SAM_6473.JPG"  />
+               <img class="img-responsive center-block" src="img/IMG_7688.JPG"  />
+
+            </div>
+            <div class="slide">
+               <img class="img-responsive center-block" src="img/IMG_7688.JPG"  />
+               <img class="img-responsive center-block" src="img/IMG_7688.JPG"  />
+
+            </div>
         </div>
+        <div class="section">
+                      <img src="img/wedding-icons/PNGs/TWO COLORS/WEDDING AND LOVE ICONS_color3_selinozgur-44.png" style="box-shadow:0 0 0; border:0;z-index:2;height:50;top:50px;"/>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12"><div class="map_wrap">
+                <div class="center-block">
+                  <a target="_blank" href="http://map.daum.net/?urlX=495977.0&amp;urlY=1127756.0&amp;itemId=12372877&amp;q=%EC%9A%B0%EB%A6%AC%EC%9D%80%ED%96%89%20%EB%B3%B8%EC%A0%90&amp;srcid=12372877&amp;map_type=TYPE_MAP&amp;from=roughmap">
+                    <img class="map img-responsive center-block" src="http://cfile185.uf.daum.net/image/2106C43C56A18E230E06CB" width="100%">
+                  </a>
+                </div>
+                </div>
+              </div>
+                <div class="col-xs-4"><strong>오시는길</strong><br> </div>
+                <div class="col-xs-8"><br>버스 타고 오세요 <br> 지하철 타고 오세요 <br> 자가용도 괞찮아요</div>
+              </div>
+            </div>
+          </div>
+        <div class="section">
+          <div id="disqus_thread" style="background-color: white;border-radius: 15px;"></div>
+<script>
+
+    var disqus_config = function () {
+        this.page.url = 'http://mendorong.github.io/';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = '//joon1030.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $(window).resize();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+
+    </div>
 
 
       <script>
@@ -244,7 +244,7 @@
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors: ['wedding', 'photos','where', 'msg'],
+      anchors: ['wedding', 'who','photos','where', 'msg'],
       navigation: false,
       navigationPosition: 'right',
       navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -276,11 +276,11 @@
       recordHistory: true,
 
       //Design
-      controlArrows: true,
+      controlArrows: false,
       verticalCentered: true,
       resize : false,
       sectionsColor : ['#fff', '#fff'],
-      paddingTop: '3em',
+      paddingTop: '0em',
       paddingBottom: '10px',
       fixedElements: '#header, .footer',
       responsiveWidth: 0,
@@ -289,7 +289,7 @@
       //Custom selectors
       sectionSelector: '.section',
       slideSelector: '.slide',
-      anchors:['wedding','photos', 'where', 'msg'],
+      anchors:['wedding','who','photos', 'where', 'msg'],
       //events
       onLeave: function(index, nextIndex, direction){},
       afterLoad: function(anchorLink, index){},
